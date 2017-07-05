@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="Theme.App" parent="Theme.AppCompat.Light.NoActionBar">
+  </style>
+  
+  <style name="Theme.App.Red" parent="Theme.App">
+    <item name="colorPrimary">@color/red_500</item>
+    <item name="colorPrimaryDark">@color/red_700</item>
+    <item name="colorAccent">@color/red_A200</item>
+  </style>
+
+  <style name="Theme.App.Blue" parent="Theme.App">
+    <item name="colorPrimary">@color/blue_500</item>
+    <item name="colorPrimaryDark">@color/blue_700</item>
+    <item name="colorAccent">@color/blue_A200</item>
+  </style>
+
+  <style name="Theme.App.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+  
+  <style name="Theme.App.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+  <style name="Theme.App.ListItem"></style>
+
+  <style name="Theme.App.ListItem.PrimaryText">
+    <item name="android:textSize">@dimen/list_item_primary_text_size</item>
+    <item name="android:textColor">@color/list_item_primary_text_color</item>
+  </style>
+  <style name="Theme.App.ListItem.SecondaryText">
+    <item name="android:textSize">@dimen/list_item_secondary_text_size</item>
+    <item name="android:textColor">@color/list_item_secondary_text_color</item>
+  </style>
+
+  <style name="Theme.App.ListItem.Divider">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">0.5dp</item>
+    <item name="android:layout_marginLeft">@dimen/list_item_horizontal_margin</item>
+    <item name="android:layout_marginRight">@dimen/list_item_horizontal_margin</item>
+    <item name="android:background">@color/divider_color</item>
+  </style>
+</resources>

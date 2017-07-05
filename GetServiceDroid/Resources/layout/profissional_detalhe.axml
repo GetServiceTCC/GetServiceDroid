@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+  <android.support.design.widget.AppBarLayout
+      android:id="@+id/appBarProfissionalDetalhe"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:theme="@style/Theme.App.AppBarOverlay">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarProfissionalDetalhe"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:collapseIcon="@drawable/ic_arrow_back"
+        app:popupTheme="@style/Theme.App.PopupOverlay"
+        app:layout_scrollFlags="scroll|enterAlways" />
+    <android.support.v7.widget.RecyclerView
+        android:background="#fff"
+        android:id="@+id/profissionalDetalhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabsProfissionalDetalhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:tabIndicatorColor="?android:attr/colorPrimary"
+        app:tabTextColor="?android:attr/colorPrimary"
+        app:tabSelectedTextColor="?android:attr/colorPrimary" />
+  </android.support.design.widget.AppBarLayout>
+  <android.support.v4.view.ViewPager
+      android:id="@+id/viewPagerProfissionalDetalhe"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+  <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabProfissional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_person_add" />
+</android.support.design.widget.CoordinatorLayout>

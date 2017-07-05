@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarServico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.App.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBarServico"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:collapseIcon="@drawable/ic_arrow_back"
+            app:popupTheme="@style/Theme.App.PopupOverlay"
+            app:layout_scrollFlags="scroll|enterAlways" />
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilDescricaoServico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="50">
+                <EditText
+                    android:id="@+id/edtDescricaoServico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Descrição"
+                    android:singleLine="true"
+                    android:maxLength="50"
+                    android:imeOptions="actionNext" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilSobreServico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="150">
+                <EditText
+                    android:id="@+id/edtSobreServico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Sobre o serviço"
+                    android:maxLength="150"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" />
+            </android.support.design.widget.TextInputLayout>
+          <CheckBox
+                android:id="@+id/chkAtivoServico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Ativo?" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilCategoriaServico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Categoria"
+                    android:textAppearance="@style/Theme.App.ListItem.SecondaryText" />
+                <Spinner
+                    android:id="@+id/spinCategoriaServico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Categoria" />
+                <View
+                    style="@style/Theme.App.ListItem.Divider"
+                    android:layout_marginTop="2dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilSubCategoriaServico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sub Categoria"
+                    android:textAppearance="@style/Theme.App.ListItem.SecondaryText" />
+                <Spinner
+                    android:id="@+id/spinSubCategoriaServico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Sub Categoria" />
+                <View
+                    style="@style/Theme.App.ListItem.Divider"
+                    android:layout_marginTop="2dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilTipoValorServico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo de Valor"
+                    android:textAppearance="@style/Theme.App.ListItem.SecondaryText" />
+                <Spinner
+                    android:id="@+id/spinTipoValorServico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tipo de valor" />
+                <View
+                    style="@style/Theme.App.ListItem.Divider"
+                    android:layout_marginTop="2dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilValorServico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+                <EditText
+                    android:id="@+id/edtValorServico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Valor"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal" />
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/btnSalvar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Salvar" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

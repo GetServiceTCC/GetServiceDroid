@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <group android:checkableBehavior="none">
+     <item
+          android:id="@+id/drawerAlterarFoto"
+          android:icon="@drawable/ic_camera"
+          android:title="Alterar Foto" />
+      <item
+          android:id="@+id/drawerAlterarUsuario"
+          android:icon="@drawable/ic_person"
+          android:title="Alterar Usuário" />
+     <item
+          android:id="@+id/drawerAlterarSenha"
+          android:icon="@drawable/ic_password"
+          android:title="Alterar Senha" />
+    <item
+          android:id="@+id/drawerConfiguracoes"
+          android:icon="@drawable/ic_settings"
+          android:title="Alterar Tema" />
+      <item
+          android:id="@+id/drawerLogout"
+          android:icon="@drawable/ic_logout"
+          android:title="Logout" />
+  </group>
+
+</menu>
